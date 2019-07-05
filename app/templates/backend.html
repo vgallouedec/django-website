@@ -1,0 +1,6 @@
+{% if ajout %} <p> element added </p> {% endif %}
+<form action="" method="post">
+	{% csrf_token %} 
+	<input type="text" name="pays">
+	<input type="submit">
+</form>
