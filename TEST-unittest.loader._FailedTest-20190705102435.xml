@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" file="unittest/loader.py" name="unittest.loader._FailedTest-20190705102435" skipped="0" tests="1" time="0.005" timestamp="2019-07-05T10:24:35">
+	<testcase classname="unittest.loader._FailedTest.app" file="/usr/lib64/python3.6/unittest/loader.py" line="33" name="tests" time="0.005" timestamp="2019-07-05T10:24:35">
+		<error message="Failed to import test module: app.tests
+Traceback (most recent call last):
+  File &quot;/usr/lib64/python3.6/unittest/loader.py&quot;, line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File &quot;/usr/lib64/python3.6/unittest/loader.py&quot;, line 369, in _get_module_from_name
+    __import__(name)
+  File &quot;/home/valentin/Documents/django/siteTest/app/tests.py&quot;, line 6, in &lt;module&gt;
+    from .views import *
+  File &quot;/home/valentin/Documents/django/siteTest/app/views.py&quot;, line 5, in &lt;module&gt;
+    from app.models import Country
+  File &quot;/home/valentin/Documents/django/siteTest/app/models.py&quot;, line 3, in &lt;module&gt;
+    class Country(models.Model):
+  File &quot;/usr/lib/python3.6/site-packages/django/db/models/base.py&quot;, line 87, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File &quot;/usr/lib/python3.6/site-packages/django/apps/registry.py&quot;, line 249, in get_containing_app_config
+    self.check_apps_ready()
+  File &quot;/usr/lib/python3.6/site-packages/django/apps/registry.py&quot;, line 132, in check_apps_ready
+    raise AppRegistryNotReady(&quot;Apps aren't loaded yet.&quot;)
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+" type="ImportError">
+<![CDATA[ImportError: Failed to import test module: app.tests
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib64/python3.6/unittest/loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "/home/valentin/Documents/django/siteTest/app/tests.py", line 6, in <module>
+    from .views import *
+  File "/home/valentin/Documents/django/siteTest/app/views.py", line 5, in <module>
+    from app.models import Country
+  File "/home/valentin/Documents/django/siteTest/app/models.py", line 3, in <module>
+    class Country(models.Model):
+  File "/usr/lib/python3.6/site-packages/django/db/models/base.py", line 87, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/lib/python3.6/site-packages/django/apps/registry.py", line 249, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/lib/python3.6/site-packages/django/apps/registry.py", line 132, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
+import xmlrunner
 
 from .views import *
 
@@ -18,6 +19,4 @@ class MyFirstTest(TestCase):
 			index(self.request).content,
 			HttpResponse("Hello, world. You're at the app index.").content
 		)
-
-
 
