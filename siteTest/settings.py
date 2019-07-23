@@ -16,6 +16,8 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'gytnaf0-y66g#$@ptwx$3y*_wb*v4pc6ni2@sumfsr@kd=b_f('
